@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont,
+      "Segoe UI", sans-serif;
+    @apply antialiased;
+  }
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(0 100%, 0 0, 100% 0, 100% 89%, 84% 89%, 63% 91%, 27% 99%);
+}
+
+.step-section {
+  margin-top: 8rem;
+}
+
+.mobile-button {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .hero-section::after {
+    bottom: -25px;
+    height: 80px;
+  }
+  .mobile-button {
+    display: flex;
+    justify-content: center;
+    background: #ffffff;
+    height: 120px;
+    align-items: self-start;
+    padding-top: 2rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: -6rem;
+    position: relative;
+    box-shadow: 4px -5px 18px -14px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 4px -5px 18px -14px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 4px -5px 18px -14px rgba(0, 0, 0, 0.75);
+  }
+  .mobile-button button {
+    padding: 0.7rem 8rem;
+  }
+  .step-section {
+    margin-top: 4rem;
+  }
+}
+
+.masked {
+  clip-path: polygon(
+    0 100%,
+    0 0,
+    4% 0,
+    8% 0,
+    13% 1%,
+    17% 3%,
+    22% 4%,
+    26% 6%,
+    30% 7%,
+    34% 8%,
+    39% 7%,
+    45% 5%,
+    51% 3%,
+    56% 2%,
+    66% 1%,
+    72% 1%,
+    81% 3%,
+    88% 6%,
+    94% 10%,
+    100% 18%,
+    100% 75%,
+    95% 84%,
+    89% 90%,
+    78% 94%,
+    67% 95%,
+    56% 95%,
+    47% 95%,
+    39% 94%,
+    30% 94%,
+    21% 96%,
+    16% 97%,
+    10% 99%,
+    4% 100%
+  );
+}
+
+.masked-mobile {
+  clip-path: polygon(
+    0 100%,
+    0 0,
+    11% 0%,
+    22% 3%,
+    35% 6%,
+    45% 7%,
+    56% 5%,
+    65% 2%,
+    76% 0,
+    88% 0,
+    100% 5%,
+    100% 95%,
+    86% 98%,
+    70% 99%,
+    54% 96%,
+    41% 90%,
+    32% 90%,
+    21% 93%,
+    12% 97%
+  );
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  display: none;
+}
