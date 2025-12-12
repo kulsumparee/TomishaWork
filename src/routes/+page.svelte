@@ -119,10 +119,10 @@
       </div>
     </div>
 
-    <!-- Tab Content -->
-    <div class="text-center mx-auto">
+    <!-- Tab Content 1-->
+    <div  class="text-center mx-auto">
       <h2
-        class="text-3xl md:text-4xl font-bold text-[#4A5568] mt-12 font-normal tracking-tight"
+        class="text-3xl md:text-4xl  text-[#4A5568] mt-12 font-normal tracking-tight"
       >
         Drei einfache Schritte<br />zu deinem neuen Job
       </h2>
@@ -302,5 +302,7 @@
         </div>
       </div>
     </div>
+
+
   </section>
 </div>

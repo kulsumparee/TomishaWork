@@ -8,13 +8,14 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "sourceMap": true,
-    "types": ["svelte"],
+    "types": [
+      "svelte"
+    ],
     "strict": true,
     "moduleResolution": "bundler"
   },
   "include": [
     "src/**/*",
     "src/global.d.ts"
-    // ...existing code...
   ]
 }
